@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>青年大学习辅助工具</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand"><strong>青年大学习</strong> <small>截图生成</small></a>
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="container">
+
+<form class="form-horizontal" role="form">
+	<div class="form-group">
+		<label for="firstname" class="col-sm-2 control-label">第几季</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id="s" 
+				   placeholder="请输入数字">
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="lastname" class="col-sm-2 control-label">第几期</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id="e" 
+				   placeholder="请输入数字">
+		</div>
+	</div>
+	<div class="form-group"  align="right">
+		<div class="col-sm-offset-2 col-sm-10">
+			<a type="button" class="btn btn-primary" href="javascript:gooooooo()">确定</a>	
+		</div>
+	</div>
+</form>
+
+
+
+</div>
+<script>
+    function gooooooo() {
+		console.log("123123")
+        var s = $("#s").val();
+        var e = $("#e").val();
+        window.location.href = `end.html?s=${s}&e=${e}`;
+    }
+</script>
+</body>
+</html>
